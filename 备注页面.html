@@ -6,21 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>备注页面</title>
     <style>
-        .red-text {
-            color: red;
-            text-align: center;
-            /* 文本居中 */
-            position: absolute;
-            font-weight: bold;
-            font-size: 14px
-/*             top: 10%; */
-/*             left: 50%; */
-/*             transform: translate(-50%, -50%); */
-            /* 居中 */
-            margin-bottom: 20px;
-            /* 与下方元素保持一定距离 */
-        }
-
+.red-text {  
+        color: red;  
+        text-align: center;  
+        position: absolute;  
+        top: 20px; /* 调整这个值来控制红色文本与页面顶部的距离 */  
+        left: 50%;  
+        transform: translateX(-50%); /* 仅使用 translateX 来水平居中 */  
+        font-weight: bold;  
+        font-size: 14px;  
+        width: calc(100% - 20px); /* 可选，限制文本宽度，避免过长时溢出 */  
+        margin-bottom: 20px; /* 保持与下方元素的距离，但在此布局中可能不需要 */  
+    }  
         .button {
             background-color: #4d98dc;
             color: white;
